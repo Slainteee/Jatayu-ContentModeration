@@ -135,3 +135,4 @@ hatespeech/dataset/final_training.csv
 hatespeech/dataset/train.csv
 hatespeech/dataset/traindata2.csv
 Web-Frontend/.gitignore
+Web-Frontend/static/uploads
