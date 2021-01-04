@@ -131,3 +131,6 @@ dmypy.json
 
 #personal
 try
+hatespeech/dataset/final_training.csv
+hatespeech/dataset/train.csv
+hatespeech/dataset/traindata2.csv
