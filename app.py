@@ -24,14 +24,14 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 	
 client = SightengineClient('510188098','WaehbLBjT3mYTmnxDsp3')
 	
-model = pickle.load(open("lr_modelhate.pkl", 'rb'))
-vect = pickle.load(open("vectorizerhate.pkl", 'rb'))
+model = pickle.load(open("lr_modelhate.pkl", 'rb'))  #path to hate speech model
+vect = pickle.load(open("vectorizerhate.pkl", 'rb')) #path to hate speech vectorizer
 
-spam_model = pickle.load(open("lr_modelspam.pkl", 'rb'))
-spam_vect = pickle.load(open("vectorizerspam.pickle", 'rb'))
+spam_model = pickle.load(open("lr_modelspam.pkl", 'rb')) #path to spam model
+spam_vect = pickle.load(open("vectorizerspam.pickle", 'rb')) ##path to spam vectorizer
 
 #model = keras.models.load_model('model.h5')
-violence_model=keras.models.load_model('violence_model4.h5')
+violence_model=keras.models.load_model('violence_model4.h5') #path to violence model
 
 @app.route('/', methods=['POST','GET'])
 def makecalc():
