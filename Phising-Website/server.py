@@ -7,7 +7,7 @@ from flask import (
 from flask import jsonify
 from werkzeug.utils import secure_filename
 app = Flask(__name__)
-
+from googlesearch import search
 UPLOAD_FOLDER= '/files'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif','py'])
@@ -45,7 +45,7 @@ def hello():
 			return render_template("getInput.html")
 	return  render_template("getInput.html")
 
-			
+
 
 
 
