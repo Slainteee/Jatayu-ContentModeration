@@ -6,25 +6,27 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression as lr
 from flask import jsonify
 import pickle
+from googlesearch import search
 
+#Importing dataset
+data = np.loadtxt(r"dataset/dataset.csv", delimiter = ",")
+
+#Seperating features and labels
+X = data[: , :-1]
+y = data[: , -1]
+
+#Seperating training features, testing features, training labels & testing labels
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)
+clf = rfc()
+clf.fit(X_train, y_train)
+score = clf.score(X_test, y_test)
+#print(score*100)
+
+pickle.dump(clf,open('trained-model/model_random_forest.pkl','wb'))
 
 def getResult(url):
 
-    #Importing dataset
-    """data = np.loadtxt(r"dataset/dataset.csv", delimiter = ",")
-
-    #Seperating features and labels
-    X = data[: , :-1]
-    y = data[: , -1]
-
-    #Seperating training features, testing features, training labels & testing labels
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)
-    clf = rfc()
-    clf.fit(X_train, y_train)
-    score = clf.score(X_test, y_test)
-    #print(score*100)
-
-    pickle.dump(clf,open('model_random_forest.pkl','wb'))"""
+    
 
     #model=pickle.load(open(r'trained-model/model_random_forest.pkl','rb'))
     model=pickle.load(open(r'trained-model/model_logistic_regression.pkl','rb'))
