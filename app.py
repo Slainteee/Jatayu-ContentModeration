@@ -19,19 +19,19 @@ import speech_recognition as sr
 app = Flask(__name__)
 #with open('tokenizer.pickle', 'rb') as handle:
 	#tokenizer = pickle.load(handle)
-	
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-	
-client = SightengineClient('510188098','WaehbLBjT3mYTmnxDsp3')
-	
-model = pickle.load(open("lr_modelhate.pkl", 'rb'))  #path to hate speech model
-vect = pickle.load(open("vectorizerhate.pkl", 'rb')) #path to hate speech vectorizer
 
-spam_model = pickle.load(open("lr_modelspam.pkl", 'rb')) #path to spam model
-spam_vect = pickle.load(open("vectorizerspam.pickle", 'rb')) ##path to spam vectorizer
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+client = SightengineClient('510188098','WaehbLBjT3mYTmnxDsp3')
+
+model = pickle.load(open(r"hatespeech\saved_models\lr_model.pkl", 'rb'))  #path to hate speech model
+vect = pickle.load(open(r"hatespeech\saved_models\vectorizer.pkl", 'rb')) #path to hate speech vectorizer
+
+spam_model = pickle.load(open(r"Spam Classifier\saved_models\lr_model.pkl", 'rb')) #path to spam model
+spam_vect = pickle.load(open(r"Spam Classifier\saved_models\vectorizer.pickle", 'rb')) ##path to spam vectorizer
 
 #model = keras.models.load_model('model.h5')
-violence_model=keras.models.load_model('violence_model4.h5') #path to violence model
+violence_model=keras.models.load_model(r'Violence-Detection\Tensorflow-Implementation\violence_model4.h5') #path to violence model
 
 @app.route('/', methods=['POST','GET'])
 def makecalc():
@@ -77,9 +77,10 @@ def makecalc():
 				return jsonify("NORMAL")
 	elif(t=="text"):
 		extractedInformation=data["text"]
+		print(data["text"])
 		#extractedInformation=str(request.args["text"])
-	extractedInformation=extractedInformation.replace('\r', "").replace('\n'," ")
-	extractedInformation=translator.translate(extractedInformation).text
+		extractedInformation=extractedInformation.replace('\r', "").replace('\n'," ")
+		extractedInformation=translator.translate(extractedInformation).text
 	extractedInformation=[extractedInformation]
 	sen_trans = vect.transform(extractedInformation)
 	prediction=model.predict(sen_trans)[0]
@@ -91,4 +92,4 @@ def makecalc():
 		return jsonify("SPAM")
 	else:
 		return jsonify("NORMAL")
-	app.run()
+app.run(debug = True)
