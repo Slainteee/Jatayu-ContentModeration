@@ -33,16 +33,22 @@
       {% endif %}
 
       {% if i[1]=='image' %}
-      <p><img src="{{i[0]}}" width="150px" height="100px"><p>
-
+      <br>
+      <p><img src="{{i[0]}}" width="250px" height="200px"><p>
       {% endif %}
 
       {% if i[1]=='audio' %}
+      <br>
       <audio controls>
         <source src="{{i[0]}}">
-
-
       </audio>
+      {% endif %}
+
+      {% if i[1]=='video' %}
+      <br>
+      <video width="250px" height="200px" controls>
+        <source src="{{i[0]}}">
+      </video>
       {% endif %}
     {%endfor%}
 
