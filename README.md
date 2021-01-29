@@ -20,6 +20,17 @@ For the image data, we are checking for any inappropriate text in the image or w
 ## Architecture Diagram
 ![picture alt](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/documents/architecture.png)
 
+## Tech Stack
+1. Languages : Python. We will use Python basically for everything, from Modeling to ETL
+2. AI/ML : Pytorch/Tensorflow(for most Deep Learning Tasks) and Scikit-Learn(Our go-to for most Non DL Tasks
+3. NLP : NLTK/spaCy for extracting features from the text data.
+4. OCR : For extracting Text from images, We rely on Tesseract OCR Engine.
+5. Speech Recognition : Analysing Audio input can be achieved through Speech to text Conversion. We have used Sphinx/Google Speech Recognition for the same.
+6. Version Control : Github is the best choice for any group project for code control and tracking.
+7. Additional Libraries: Pandas, Numpy, MatplotLib
+8. Google Colab for GPU support
+9. Project Management: We used Notion and We find ourself using Notion for more than just project management and tracking. We were able to keep track of what Our Team Members do on a daily basis, make sure that we allocate time efficiently, and track what everyone on the team is up to.
+
 ## Team Members
 
 Name  | Profile
