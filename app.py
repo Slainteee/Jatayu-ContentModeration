@@ -16,7 +16,9 @@ import torchvision.transforms as transforms
 import numpy as np
 from sightengine.client import SightengineClient
 from googletrans import Translator
-
+from PhishingWebsite import phishing_detection
+from PhishingWebsite import feature_extraction
+from urlextract import URLExtract
 
 #-----------------------------------------------#
 app = Flask(__name__)
@@ -36,7 +38,7 @@ custom_config = r'--oem 3 --psm 6'
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
 
 client = SightengineClient('510188098','WaehbLBjT3mYTmnxDsp3')
-
+extractor = URLExtract()
 #-----------------------------------------------#
 
 def isspam(string:str) -> bool:
@@ -149,6 +151,13 @@ def main():
 
     elif t=="text":
         receivedtext = data["data"]
+        urls = extractor.find_urls(receivedtext)
+        if urls:
+            l=[]
+            for i in urls:
+                l.append(phishing_detection.getResult(i))
+            if "Phishing Website" in l:
+                return jsonify(False)
         receivedtext = translator.translate(receivedtext).text
         if ishate(receivedtext):
             return jsonify(False)
