@@ -12,4 +12,4 @@ Moderating the content on social media websites is important, as now such platfo
 ## Our Solution
 Our idea is to develop a filter which can be embedded in any chat system or social media to prevent cyberbullying, hate spread, obscenity etc.
 
-We have came up with a AI based Content Moderation model which is deployed as a API and it can be easily used in any Web or Mobile based platforms.
+We have came up with a AI based Content Moderation model which is deployed as an [API](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/app.py) and it can be easily used in any [Web](https://github.com/Slainteee/Jatayu-ContentModeration/tree/master/Web-Frontend) or [Mobile](https://github.com/Slainteee/Jatayu-ContentModeration/tree/master/App) based platforms.
