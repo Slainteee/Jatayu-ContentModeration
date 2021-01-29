@@ -19,7 +19,7 @@ For the image data, we are checking for any inappropriate text in the image or w
 
 ## Team Members
 
-First Header  | Second Header
+Name  | Profile
 ------------- | -------------
 Koyya Khushhal Reddy  | [Github](https://github.com/KKhushhalR2405)
 Aryamaan Srivastava  | [Github](https://github.com/Aryamaan777)
