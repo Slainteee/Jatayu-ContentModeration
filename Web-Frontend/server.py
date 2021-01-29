@@ -49,7 +49,7 @@ def upload_image():
                 if len(contents)==0 or contents[0]!=t:
                     contents.insert(0,t)
             else:
-                flash("Invalid Input")
+                flash("Invalid Text")
                 return render_template("index.html",content=contents)
 
         else:
@@ -72,6 +72,9 @@ def upload_image():
                 if r.text.split()[0]=="true":
                     if len(contents)==0 or contents[0]!=p:
                         contents.insert(0,p)
+                else:
+                    flash("Invalid Image")
+                    return render_template("index.html",content=contents)
 
 
             elif type=="audio":
@@ -85,6 +88,9 @@ def upload_image():
                 if r.text.split()[0]=="true":
                     if len(contents)==0 or contents[0]!=p:
                         contents.insert(0,p)
+                else:
+                    flash("Invalid Audio")
+                    return render_template("index.html",content=contents)
             elif type=="video":
                 vid=up.upload_large(path,cloud_name='drlf6gntz',api_key='894749617857176',api_secret='Qp-ckIp4k_xIresVZF7Gms0WrPY')
                 vid_url=vid["url"]
@@ -95,6 +101,9 @@ def upload_image():
                 if r.text.split()[0]=="true":
                     if len(contents)==0 or contents[0]!=p:
                         contents.insert(0,p)
+                else:
+                    flash("Invalid Video")
+                    return render_template("index.html",content=contents)
 
         return render_template("index.html",content=contents)
     except Exception as e:
