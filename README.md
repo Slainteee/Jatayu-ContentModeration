@@ -17,3 +17,12 @@ We have came up with a AI based Content Moderation model which is deployed as an
 ## Process Flow
 For the image data, we are checking for any inappropriate text in the image or whether the image contains violence. The API checks the same for audio and video data aswell . Apart from images and videos of violence, It will also check for sexual or nudity related contents like, sexual activities, pornography, offensive signs, stripped images of people, especially females with revealing dresses and erotic gestures that are against the community of the chat platforms. In case of text data, along with checking for hatefull speech , the API will even check for any malicious links in the text in order to prevent cyberattacks such as phishing attacks. It will also check for spam messages/mails with circulates in online chat plaforms in the form of fake advertisements,self promotion etc.
 
+## Team Members
+
+First Header  | Second Header
+------------- | -------------
+Koyya Khushhal Reddy  | [Github](https://github.com/KKhushhalR2405)
+Aryamaan Srivastava  | [Github](https://github.com/Aryamaan777)
+Preeti Ranjan Panda  | [Github](https://github.com/ranjan-panda)
+Naman Sharma  | [Github](https://github.com/hawknash)
+Satyanand Prasad  | [Github](https://github.com/orgs/Slainteee/people/satyap07)
