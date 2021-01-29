@@ -1,6 +1,7 @@
 # Jatayu-ContentModeration
 ![shield-PRs](https://img.shields.io/badge/Type-Hackathon-blue)
 ![shield-PRs](https://img.shields.io/badge/Hackathon-Jatayu-blue)
+![shield-PRs](https://img.shields.io/badge/Use%20Case-AI%20Based%20Content%20Moderation-blue)
 
 
 ## Content Moderation for Online Chat Application
