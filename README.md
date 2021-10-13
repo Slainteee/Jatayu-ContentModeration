@@ -41,6 +41,7 @@ Name  | Profile
 ------------- | -------------
 Koyya Khushhal Reddy  | [Github](https://github.com/KKhushhalR2405)
 Aryamaan Srivastava  | [Github](https://github.com/Aryamaan777)
+Ayush Kanaujia  |  [Github](https://github.com/Ayushkanaujia)
 Preeti Ranjan Panda  | [Github](https://github.com/ranjan-panda)
 Naman Sharma  | [Github](https://github.com/hawknash)
 Satyanand Prasad  | [Github](https://github.com/satyap07)
