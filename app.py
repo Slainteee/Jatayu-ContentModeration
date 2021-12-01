@@ -35,7 +35,7 @@ violence_model.load_state_dict(checkpoint['state_dict'])
 
 custom_config = r'--oem 3 --psm 6'
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 client = SightengineClient('510188098','WaehbLBjT3mYTmnxDsp3')
 extractor = URLExtract()
@@ -100,7 +100,7 @@ def main():
         with sr.AudioFile(path) as source:
             audio=r.record(source)
             extractedInformation = r.recognize_google(audio,show_all=False)
-            extractedInformation = translator.translate(extractedInformation).text
+            # extractedInformation = translator.translate(extractedInformation).text
             if extractedInformation=="":
                 return jsonify(True)
             if re.search("\*",extractedInformation):
@@ -151,6 +151,7 @@ def main():
 
     elif t=="text":
         receivedtext = data["data"]
+        # print(receivedtext)
         urls = extractor.find_urls(receivedtext)
         if urls:
             l=[]
@@ -158,7 +159,8 @@ def main():
                 l.append(phishing_detection.getResult(i))
             if "Phishing Website" in l:
                 return jsonify(False)
-        receivedtext = translator.translate(receivedtext).text
+        #receivedtext = translator.translate(receivedtext).text
+        # print("Error Idhar hai")
         if ishate(receivedtext):
             return jsonify(False)
         if isspam(receivedtext):
