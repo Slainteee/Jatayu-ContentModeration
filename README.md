@@ -35,3 +35,26 @@ For the image data, we are checking for any inappropriate text in the image or w
 8. Google Colab for GPU support.
 9. Project Management: We used Notion and We find ourself using Notion for more than just project management and tracking. We were able to keep track of what Our Team Members do on a daily basis, make sure that we allocate time efficiently, and track what everyone on the team is up to.
 
+## Installation Guide
+* For Windows
+
+```
+git clone https://github.com/Slainteee/Jatayu-ContentModeration.git
+```
+```
+cd Jatayu-ContentModeration
+```
+Create and activate Virtual Environment
+```
+pip install -r requirements.txt
+```
+The project uses pytesseract OCR engine. To install pytesseract, Follow [this](https://stackoverflow.com/a/53672281)
+
+After succesfully installing pytesseract, set the tesseract path in the script. Add the following line in the app.py file
+```
+pytesseract.pytesseract.tesseract_cmd = <tesseract-path-here>
+```
+The Project is ready to run on your local machine💥💥
+
+
+
