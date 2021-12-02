@@ -35,13 +35,3 @@ For the image data, we are checking for any inappropriate text in the image or w
 8. Google Colab for GPU support.
 9. Project Management: We used Notion and We find ourself using Notion for more than just project management and tracking. We were able to keep track of what Our Team Members do on a daily basis, make sure that we allocate time efficiently, and track what everyone on the team is up to.
 
-## Team Members
-
-Name  | Profile
-------------- | -------------
-Koyya Khushhal Reddy  | [Github](https://github.com/KKhushhalR2405)
-Aryamaan Srivastava  | [Github](https://github.com/Aryamaan777)
-Ayush Kanaujia  |  [Github](https://github.com/Ayushkanaujia)
-Preeti Ranjan Panda  | [Github](https://github.com/ranjan-panda)
-Naman Sharma  | [Github](https://github.com/hawknash)
-Satyanand Prasad  | [Github](https://github.com/satyap07)
