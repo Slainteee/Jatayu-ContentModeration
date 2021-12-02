@@ -13,8 +13,8 @@ User generated contents contains different types of opinions and expressions thr
 ## Why Content Moderation is important
 Moderating the content on social media websites is important, as now such platforms are used to promote the business, products and brands and such spam contents can disappoint other customers and discourage them to either stay away from such platforms or minimize the use of social media sites.
 
-## Our Solution
-Our idea is to develop a filter which can be embedded in any chat system or social media to prevent cyberbullying, hate spread, obscenity etc.
+## The Solution
+The idea is to develop a filter which can be embedded in any chat system or social media to prevent cyberbullying, hate spread, obscenity etc.
 
 We have came up with a AI based Content Moderation model which is deployed as an [API](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/app.py) and it can be easily used in any Web [(demo)](https://github.com/Slainteee/Jatayu-ContentModeration/tree/master/Web-Frontend) or Mobile [(demo)](https://github.com/Slainteee/Jatayu-ContentModeration/tree/master/App) based platforms.
 
@@ -34,4 +34,27 @@ For the image data, we are checking for any inappropriate text in the image or w
 7. Additional Libraries: Pandas, Numpy, MatplotLib
 8. Google Colab for GPU support.
 9. Project Management: We used Notion and We find ourself using Notion for more than just project management and tracking. We were able to keep track of what Our Team Members do on a daily basis, make sure that we allocate time efficiently, and track what everyone on the team is up to.
+
+## Installation Guide
+* For Windows
+
+```
+git clone https://github.com/Slainteee/Jatayu-ContentModeration.git
+```
+```
+cd Jatayu-ContentModeration
+```
+Create and activate Virtual Environment
+```
+pip install -r requirements.txt
+```
+The project uses pytesseract OCR engine. To install pytesseract, Follow [this](https://stackoverflow.com/a/53672281)
+
+After succesfully installing pytesseract, set the tesseract path in the script. Add the following line in the app.py file
+```
+pytesseract.pytesseract.tesseract_cmd = <tesseract-path-here>
+```
+The Project is ready to run on your local machine💥💥
+
+
 
