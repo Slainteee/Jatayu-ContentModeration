@@ -13,8 +13,8 @@ User generated contents contains different types of opinions and expressions thr
 ## Why Content Moderation is important
 Moderating the content on social media websites is important, as now such platforms are used to promote the business, products and brands and such spam contents can disappoint other customers and discourage them to either stay away from such platforms or minimize the use of social media sites.
 
-## Our Solution
-Our idea is to develop a filter which can be embedded in any chat system or social media to prevent cyberbullying, hate spread, obscenity etc.
+## The Solution
+The idea is to develop a filter which can be embedded in any chat system or social media to prevent cyberbullying, hate spread, obscenity etc.
 
 We have came up with a AI based Content Moderation model which is deployed as an [API](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/app.py) and it can be easily used in any Web [(demo)](https://github.com/Slainteee/Jatayu-ContentModeration/tree/master/Web-Frontend) or Mobile [(demo)](https://github.com/Slainteee/Jatayu-ContentModeration/tree/master/App) based platforms.
 
