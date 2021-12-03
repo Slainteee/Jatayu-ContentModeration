@@ -1,8 +1,4 @@
 # Jatayu-ContentModeration
-![shield-PRs](https://img.shields.io/badge/Type-Hackathon-blue)
-![shield-PRs](https://img.shields.io/badge/Hackathon-Jatayu-blue)
-![shield-PRs](https://img.shields.io/badge/Use%20Case-AI%20Based%20Content%20Moderation-blue)
-
 
 ## Content Moderation for Online Chat Application
 
@@ -51,7 +47,7 @@ pip install -r requirements.txt
 The project uses pytesseract OCR engine. To install pytesseract, Follow [this](https://stackoverflow.com/a/53672281)
 
 After succesfully installing pytesseract, set the tesseract path in the script. Add the following line in the app.py file
-```
+```python
 pytesseract.pytesseract.tesseract_cmd = <tesseract-path-here>
 ```
 The Project is ready to run on your local machine💥💥
