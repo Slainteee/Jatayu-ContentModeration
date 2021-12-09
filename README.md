@@ -34,13 +34,15 @@ For the image data, we are checking for any inappropriate text in the image or w
 ## Installation Guide
 * For Windows
 
+1) CLone the Repo
 ```
 git clone https://github.com/Slainteee/Jatayu-ContentModeration.git
 ```
+2) Change the working directory
 ```
 cd Jatayu-ContentModeration
 ```
-Create and activate Virtual Environment
+3) Create and activate Virtual Environment ([Conda](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/) is preferred)
 ```
 pip install -r requirements.txt
 ```
