@@ -35,7 +35,7 @@ violence_model.load_state_dict(checkpoint['state_dict'])
 
 custom_config = r'--oem 3 --psm 6'
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe" # Set the tesseract path here
 
 client = SightengineClient('510188098','WaehbLBjT3mYTmnxDsp3')
 extractor = URLExtract()
