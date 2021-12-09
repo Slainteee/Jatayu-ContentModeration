@@ -12,7 +12,7 @@ Moderating the content on social media websites is important, as now such platfo
 ## The Solution
 The idea is to develop a filter which can be embedded in any chat system or social media to prevent cyberbullying, hate spread, obscenity etc.
 
-We have came up with a AI based Content Moderation model which is deployed as an [API](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/app.py) and it can be easily used in any Web [(demo)](https://github.com/Slainteee/Jatayu-ContentModeration/tree/master/Web-Frontend) or Mobile [(demo)](https://github.com/Slainteee/Jatayu-ContentModeration/tree/master/App) based platforms.
+We have came up with a AI based Content Moderation model which is deployed as an API and it can be easily used in any Web or Mobile based platforms.
 
 ## Process Flow
 For the image data, we are checking for any inappropriate text in the image or whether the image contains violence. The API checks the same for audio and video data aswell . Apart from images and videos of violence, It will also check for sexual or nudity related contents like, sexual activities, pornography, offensive signs, stripped images of people, especially females with revealing dresses and erotic gestures that are against the community of the chat platforms. In case of text data, along with checking for hatefull speech , the API will even check for any malicious links in the text in order to prevent cyberattacks such as phishing attacks. It will also check for spam messages/mails with circulates in online chat plaforms in the form of fake advertisements,self promotion etc.
@@ -34,21 +34,22 @@ For the image data, we are checking for any inappropriate text in the image or w
 ## Installation Guide
 * For Windows
 
-1) CLone the Repo
+1) CLone the Repo.
 ```
 git clone https://github.com/Slainteee/Jatayu-ContentModeration.git
 ```
-2) Change the working directory
+2) Change the working directory.
 ```
 cd Jatayu-ContentModeration
 ```
-3) Create and activate Virtual Environment ([Conda](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/) is preferred)
+3) Create and activate Virtual Environment ([Conda](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/) is preferred).
+4) Install the required packages.
 ```
 pip install -r requirements.txt
 ```
-The project uses pytesseract OCR engine. To install pytesseract, Follow [this](https://stackoverflow.com/a/53672281)
+5) Install OCR Engine: The project uses pytesseract OCR engine. To install pytesseract, Follow [this](https://stackoverflow.com/a/53672281)
 
-After succesfully installing pytesseract, set the tesseract path in the script. Add the following line in the app.py file
+6) After succesfully installing pytesseract, set the tesseract path in the script. Add the following line in the [app.py](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/app.py) file(line 38)
 ```python
 pytesseract.pytesseract.tesseract_cmd = <tesseract-path-here>
 ```
