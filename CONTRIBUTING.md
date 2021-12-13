@@ -54,7 +54,7 @@ Click on fork to create a copy of project to your account. This creates a separa
 
 ### FINDING A FEATURE OR BUG TO WORKON - 
 
-Open Source projects always have something to workon and improves with each new release. You can see the issues section to find something you can solve or report a bug. The project managers always welcome new contributors and can guide you to solve the problem. You can find issues in the right section of project page.
+Open Source projects always have something to workon and improves with each new release. You can see the issues section to find something you can solve or report a bug. The project managers always welcome new contributors and can guide you to solve the problem. You can find issues in the right section of project page or [here](https://github.com/Slainteee/Jatayu-ContentModeration/issues) 
 
 <p align="center">  <img  src="https://i.imgur.com/czVjpS7.png">  </p>
 
