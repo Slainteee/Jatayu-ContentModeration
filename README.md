@@ -21,6 +21,13 @@ For the image data, we are checking for any inappropriate text in the image or w
 ![picture alt](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/documents/architecture.png)
 
 ## Tech Stack
+![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)
+![](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+![](https://img.shields.io/badge/conda-342B029.svg?&style=for-the-badge&logo=anaconda&logoColor=white)
+![](https://img.shields.io/badge/sublime_text-%23575757.svg?&style=for-the-badge&logo=sublime-text&logoColor=important)
 1. Languages : Python. We will use Python basically for everything, from Modeling to ETL
 2. AI/ML : Pytorch/Tensorflow(for most Deep Learning Tasks) and Scikit-Learn(Our go-to for most Non DL Tasks
 3. NLP : NLTK/spaCy for extracting features from the text data.
@@ -49,7 +56,7 @@ pip install -r requirements.txt
 ```
 5) Install OCR Engine: The project uses pytesseract OCR engine. To install pytesseract, Follow [this](https://stackoverflow.com/a/53672281)
 
-6) After succesfully installing pytesseract, set the tesseract path in the script. Add the following line in the [app.py](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/app.py) file(line 38)
+6) After succesfully installing pytesseract, set the tesseract path in the script. Add the following line in the [app.py](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/app.py)
 ```python
 pytesseract.pytesseract.tesseract_cmd = <tesseract-path-here>
 ```
