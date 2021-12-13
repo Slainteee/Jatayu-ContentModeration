@@ -95,3 +95,6 @@ python server.py
 9) Flask server will run on host='127.0.0.1' and port=1025
 10) Open any web browser(Chrome preferred) and type ```127.0.0.1:1025``` to see the live demo
 
+## To Contribute
+
+“No one and nothing is perfect, or we wouldn't have uniqueness.” <-Random quote from google. You can find more [here](https://parade.com/937586/parade/life-quotes/)->. “No matter how good you get you can always get better, and that's the exciting part.” <- Another one 😅😅->. To Contribute to the project and make it better, follow the contributing guidelines
