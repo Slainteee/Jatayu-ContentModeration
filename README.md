@@ -97,4 +97,4 @@ python server.py
 
 ## To Contribute
 
-“No one and nothing is perfect, or we wouldn't have uniqueness.” <-Random quote from google. You can find more [here](https://parade.com/937586/parade/life-quotes/)->. “No matter how good you get you can always get better, and that's the exciting part.” <- Another one 😅😅->. To Contribute to the project and make it better, follow the contributing guidelines
+“No one and nothing is perfect, or we wouldn't have uniqueness.” <-Random quote from google. You can find more [here](https://parade.com/937586/parade/life-quotes/)->. “No matter how good you get you can always get better, and that's the exciting part.” <- Another one 😅😅->. To Contribute to the project and make it better, follow the [contributing guidelines](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/CONTRIBUTING.md).
