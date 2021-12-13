@@ -62,5 +62,36 @@ pytesseract.pytesseract.tesseract_cmd = <tesseract-path-here>
 ```
 The Project is ready to run on your local machine💥💥
 
+## To Run
+* For Windows
 
+1) Open 2 tabs of Command prompt
+2) Change the working directory
+```
+cd Jatayu-ContentModeration
+```
+3) Activate virtual Environment([Conda](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/) is preferred).
+4) In first CMD tab
+```
+python app.py
+```
+It will start the API server.
+5) In second CMD tab, change the directory to run the UI sample
+```
+cd Web-Frontend
+```
+6) Create a folder named upload inside the static folder
+```
+cd static && mkdir uploads
+```
+7) Return to the Web-Frontend Directory
+```
+cd ..
+```
+8) Execute the server.py to start flask web server
+```
+python server.py
+```
+9) Flask server will run on host='127.0.0.1' and port=1025
+10) Open any web browser(Chrome preferred) and type ```127.0.0.1:1025``` to see the live demo
 
