@@ -23,7 +23,6 @@ We want your work to be readable by others; therefore, we encourage you to note 
 #### Other points to remember while submitting your work:
 - Jupyter notebook files should be there with proper step-wise implementation.
 - File extension for code should be `.py`. 
-- Strictly use snake_case (underscore_separated) in your file_name, as it will be easy to parse in future using scripts.
 - Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure.
 - If you have modified/added code work, make sure the code compiles before submitting.
 - If you have modified/added documentation work, ensure your language is concise and contains no grammar errors.
