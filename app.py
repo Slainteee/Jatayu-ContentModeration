@@ -18,10 +18,11 @@ from googletrans import Translator
 from PhishingWebsite import phishing_detection
 from urlextract import URLExtract
 
-# ----------------------------------------------- #
+
 app = Flask(__name__)
 
 # ---------------------------- Loading Models ---------------------------- #
+
 
 # ------------------ Hate Speech ------------------- #
 
@@ -30,12 +31,16 @@ hate_model = pickle.load(open(r"hatespeech\saved_models\lr_model.pkl",
 hate_vect = pickle.load(open(r"hatespeech\saved_models\vectorizer.pkl", 
     'rb')) # path to hate speech vectorizer
 
+
+
 # ------------------ Spam Detection ------------------- #
 
 spam_model = pickle.load(open(r"Spam Classifier\saved_models\lr_model.pkl", 
     'rb')) # path to spam model
 spam_vect = pickle.load(open(r"Spam Classifier\saved_models\vectorizer.pickle", 
     'rb')) # path to spam vectorizer
+
+
 
 # ------------------ Voilence Detection ------------------- #
 
@@ -45,7 +50,9 @@ checkpoint = torch.load(r"Violence-Detection\Pytorch-Implementation\saved_model\
     map_location=torch.device('cpu'))
 violence_model.load_state_dict(checkpoint['state_dict'])
 
-#  ---------------------------- Loading Models ---------------------------- #
+
+
+#  ---------------------------------------------------------------------- #
 
 
 custom_config = r'--oem 3 --psm 6'
@@ -54,6 +61,8 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 
 client = SightengineClient('510188098','WaehbLBjT3mYTmnxDsp3') # Change Credentials Accordingly
 extractor = URLExtract()
+
+
 #-----------------------------------------------#
 
 # To detect spam
@@ -140,80 +149,83 @@ def isviolence(img) -> bool:
 
 @app.route('/', methods=['POST','GET'])
 def main():
-    data = request.get_json()
-    t=data["type"]
-    translator = Translator()
+    if request.method=="POST":
+        data = request.get_json()
+        t=data["type"]
+        translator = Translator()
 
-    if t == "audio":
-        r = sr.Recognizer()
-        path = r"Web-Frontend\static\uploads\audio.wav" # Media storage path. 
-        urllib.request.urlretrieve(data["data"], path)
-        with sr.AudioFile(path) as source:
-            audio=r.record(source)
-            extractedInformation = r.recognize_google(audio,show_all=False)
-            if extractedInformation=="":
-                return jsonify(True)
-            if re.search("\*",extractedInformation):
-                return jsonify(False)
-            else:
-                if isspam(extractedInformation) or ishate(extractedInformation):
+        if t == "audio":
+            r = sr.Recognizer()
+            path = r"Web-Frontend\static\uploads\audio.wav" # Media storage path. 
+            urllib.request.urlretrieve(data["data"], path)
+            with sr.AudioFile(path) as source:
+                audio=r.record(source)
+                extractedInformation = r.recognize_google(audio,show_all=False)
+                if extractedInformation=="":
+                    return jsonify(True)
+                if re.search("\*",extractedInformation):
                     return jsonify(False)
                 else:
+                    if isspam(extractedInformation) or ishate(extractedInformation):
+                        return jsonify(False)
+                    else:
+                        return jsonify(True)
+
+
+
+        elif t == "video":
+            vid_url=data["data"]
+            output = client.check('nudity').video_sync(vid_url)
+            for i in range(len(output['data']['frames'])):
+                if(output['data']['frames'][i]['nudity']['safe']>0.5):
                     return jsonify(True)
-
-
-
-    elif t == "video":
-        vid_url=data["data"]
-        output = client.check('nudity').video_sync(vid_url)
-        for i in range(len(output['data']['frames'])):
-            if(output['data']['frames'][i]['nudity']['safe']>0.5):
-                return jsonify(True)
-        return jsonify(False)
-
-
-    elif t == "image":
-
-        img_url=data["data"]
-        response=requests.get(img_url)
-        img_org=Image.open(BytesIO(response.content))
-        if isviolence(img_org):
-            return jsonify(False)
-
-        
-
-        output = client.check('nudity').set_url(img_url)
-        if output['nudity']['safe']<0.5:
             return jsonify(False)
 
 
-        img=img_org.resize((160,160))
-        img=np.array(img)
-        extractedInformation=pytesseract.image_to_string(img_org)
-        extractedInformation = re.sub(r"\n"," ",extractedInformation)
-        extractedInformation = re.sub(r"\f","",extractedInformation)
-        if ishate(extractedInformation):
-            return jsonify(False)
-        if isspam(extractedInformation):
-            return jsonify(False)
+        elif t == "image":
 
-        return jsonify(True)
-
-    elif t=="text":
-        receivedtext = data["data"]
-        # print(receivedtext)
-        urls = extractor.find_urls(receivedtext)
-        if urls:
-            l=[]
-            for i in urls:
-                l.append(phishing_detection.getResult(i))
-            if "Phishing Website" in l:
+            img_url=data["data"]
+            response=requests.get(img_url)
+            img_org=Image.open(BytesIO(response.content))
+            if isviolence(img_org):
                 return jsonify(False)
-        
-        if ishate(receivedtext):
-            return jsonify(False)
-        if isspam(receivedtext):
-            return jsonify(False)
+
+            
+
+            output = client.check('nudity').set_url(img_url)
+            if output['nudity']['safe']<0.5:
+                return jsonify(False)
+
+
+            img=img_org.resize((160,160))
+            img=np.array(img)
+            extractedInformation=pytesseract.image_to_string(img_org)
+            extractedInformation = re.sub(r"\n"," ",extractedInformation)
+            extractedInformation = re.sub(r"\f","",extractedInformation)
+            if ishate(extractedInformation):
+                return jsonify(False)
+            if isspam(extractedInformation):
+                return jsonify(False)
+
+            return jsonify(True)
+
+        elif t=="text":
+            receivedtext = data["data"]
+            # print(receivedtext)
+            urls = extractor.find_urls(receivedtext)
+            if urls:
+                l=[]
+                for i in urls:
+                    l.append(phishing_detection.getResult(i))
+                if "Phishing Website" in l:
+                    return jsonify(False)
+            
+            if ishate(receivedtext):
+                return jsonify(False)
+            if isspam(receivedtext):
+                return jsonify(False)
+            return jsonify(True)
+    else:
         return jsonify(True)
 
 
