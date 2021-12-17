@@ -1,6 +1,6 @@
 # Jatayu-ContentModeration
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Content Moderation for Online Chat Application
@@ -114,6 +114,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://www.linkedin.com/in/khushhalreddy"><img src="https://avatars.githubusercontent.com/u/58569950?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Khushhal Reddy</b></sub></a><br /><a href="#infra-KKhushhalR2405" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Slainteee/Jatayu-ContentModeration/commits?author=KKhushhalR2405" title="Tests">⚠️</a> <a href="https://github.com/Slainteee/Jatayu-ContentModeration/commits?author=KKhushhalR2405" title="Code">💻</a></td>
     <td align="center"><a href="http://www.linkedin.com/in/ranjan-panda"><img src="https://avatars.githubusercontent.com/u/69582038?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ranjan Panda</b></sub></a><br /><a href="#plugin-ranjan-panda" title="Plugin/utility libraries">🔌</a></td>
+    <td align="center"><a href="https://github.com/Aryamaan777"><img src="https://avatars.githubusercontent.com/u/63562112?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aryamaan Srivastava</b></sub></a><br /><a href="#data-Aryamaan777" title="Data">🔣</a></td>
   </tr>
 </table>
 
