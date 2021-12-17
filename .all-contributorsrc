@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "KKhushhalR2405",
+      "name": "Khushhal Reddy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58569950?v=4",
+      "profile": "http://www.linkedin.com/in/khushhalreddy",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Jatayu-ContentModeration",
+  "projectOwner": "Slainteee",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
