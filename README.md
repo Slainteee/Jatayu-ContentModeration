@@ -1,4 +1,7 @@
 # Jatayu-ContentModeration
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Content Moderation for Online Chat Application
 
@@ -99,3 +102,23 @@ python server.py
 
 “No one and nothing is perfect, or we wouldn't have uniqueness.” <-- Random quote from google. You can find more [here](https://parade.com/937586/parade/life-quotes/) -->. 
 “No matter how good you get you can always get better, and that's the exciting part.” <- Another one 😅😅->. To Contribute to the project and make it better, follow the [contributing guidelines](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/CONTRIBUTING.md).
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://www.linkedin.com/in/khushhalreddy"><img src="https://avatars.githubusercontent.com/u/58569950?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Khushhal Reddy</b></sub></a><br /><a href="#infra-KKhushhalR2405" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Slainteee/Jatayu-ContentModeration/commits?author=KKhushhalR2405" title="Tests">⚠️</a> <a href="https://github.com/Slainteee/Jatayu-ContentModeration/commits?author=KKhushhalR2405" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
