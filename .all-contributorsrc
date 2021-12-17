@@ -24,6 +24,15 @@
       "contributions": [
         "plugin"
       ]
+    },
+    {
+      "login": "Aryamaan777",
+      "name": "Aryamaan Srivastava",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63562112?v=4",
+      "profile": "https://github.com/Aryamaan777",
+      "contributions": [
+        "data"
+      ]
     }
   ],
   "contributorsPerLine": 7,
