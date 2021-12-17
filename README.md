@@ -100,7 +100,7 @@ python server.py
 
 ## Tests
 
-Testing will ensure that the api is working as expected. The project uses [pytest]() as a test framework. After setting up the basic test structure, pytest makes it really easy to write and provides a lot of flexibility for running the tests.
+Testing will ensure that the api is working as expected. The project uses [unittest](https://docs.python.org/3/library/unittest.html) as a test framework. After setting up the basic test structure, Unnitest framework makes it really easy to write and provides a lot of flexibility for running the tests.
 
 To Run the tests:
 
