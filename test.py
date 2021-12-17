@@ -11,6 +11,9 @@ class apitest(unittest.TestCase):
 		app.app.config['Testing']=True
 		self.app = app.app.test_client()
 
+	def tearDown(self):
+		print("==> Tearing down after tests!!")
+	
 	# Check for response type(200)
 	def test_response(self):
 		resp = self.app.get('/')
