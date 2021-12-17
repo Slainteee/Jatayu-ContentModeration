@@ -1,0 +1,44 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "KKhushhalR2405",
+      "name": "Khushhal Reddy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58569950?v=4",
+      "profile": "http://www.linkedin.com/in/khushhalreddy",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    },
+    {
+      "login": "ranjan-panda",
+      "name": "Ranjan Panda",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69582038?v=4",
+      "profile": "http://www.linkedin.com/in/ranjan-panda",
+      "contributions": [
+        "plugin"
+      ]
+    },
+    {
+      "login": "Aryamaan777",
+      "name": "Aryamaan Srivastava",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63562112?v=4",
+      "profile": "https://github.com/Aryamaan777",
+      "contributions": [
+        "data"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Jatayu-ContentModeration",
+  "projectOwner": "Slainteee",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

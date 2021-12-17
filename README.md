@@ -1,4 +1,7 @@
 # Jatayu-ContentModeration
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Content Moderation for Online Chat Application
 
@@ -95,6 +98,47 @@ python server.py
 9) Flask server will run on host='127.0.0.1' and port=1025
 10) Open any web browser(Chrome preferred) and type ```127.0.0.1:1025``` to see the live demo
 
+## Tests
+
+Testing will ensure that the api is working as expected. The project uses [pytest]() as a test framework. After setting up the basic test structure, pytest makes it really easy to write and provides a lot of flexibility for running the tests.
+
+To Run the tests:
+
+1) Navigate to the project directory
+```
+cd Jatayu-ContentModeration
+```
+2) Activate virtual Environment
+3) Run the test script
+```
+python test.py
+```
+
+Wanna know a secret, You can add more tests 😊😊. So go ahead and create a pull request🎉🎉
+
 ## To Contribute
 
-“No one and nothing is perfect, or we wouldn't have uniqueness.” <-Random quote from google. You can find more [here](https://parade.com/937586/parade/life-quotes/)->. “No matter how good you get you can always get better, and that's the exciting part.” <- Another one 😅😅->. To Contribute to the project and make it better, follow the [contributing guidelines](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/CONTRIBUTING.md).
+“No one and nothing is perfect, or we wouldn't have uniqueness.” <-- Random quote from google. You can find more [here](https://parade.com/937586/parade/life-quotes/) -->. 
+“No matter how good you get you can always get better, and that's the exciting part.” <- Another one 😅😅->. To Contribute to the project and make it better, follow the [contributing guidelines](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/CONTRIBUTING.md) for project specific details.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people:
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://www.linkedin.com/in/khushhalreddy"><img src="https://avatars.githubusercontent.com/u/58569950?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Khushhal Reddy</b></sub></a><br /><a href="#infra-KKhushhalR2405" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Slainteee/Jatayu-ContentModeration/commits?author=KKhushhalR2405" title="Tests">⚠️</a> <a href="https://github.com/Slainteee/Jatayu-ContentModeration/commits?author=KKhushhalR2405" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.linkedin.com/in/ranjan-panda"><img src="https://avatars.githubusercontent.com/u/69582038?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ranjan Panda</b></sub></a><br /><a href="#plugin-ranjan-panda" title="Plugin/utility libraries">🔌</a></td>
+    <td align="center"><a href="https://github.com/Aryamaan777"><img src="https://avatars.githubusercontent.com/u/63562112?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aryamaan Srivastava</b></sub></a><br /><a href="#data-Aryamaan777" title="Data">🔣</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
