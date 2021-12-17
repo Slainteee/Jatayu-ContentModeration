@@ -98,6 +98,24 @@ python server.py
 9) Flask server will run on host='127.0.0.1' and port=1025
 10) Open any web browser(Chrome preferred) and type ```127.0.0.1:1025``` to see the live demo
 
+## Tests
+
+Testing will ensure that the api is working as expected. The project uses [pytest]() as a test framework. After setting up the basic test structure, pytest makes it really easy to write and provides a lot of flexibility for running the tests.
+
+To Run the tests:
+
+1) Navigate to the project directory
+```
+cd Jatayu-ContentModeration
+```
+2) Activate virtual Environment
+3) Run the test script
+```
+python test.py
+```
+
+Wanna know a secret, You can add more tests 😊😊. So go ahead and create a pull request🎉🎉
+
 ## To Contribute
 
 “No one and nothing is perfect, or we wouldn't have uniqueness.” <-- Random quote from google. You can find more [here](https://parade.com/937586/parade/life-quotes/) -->. 
