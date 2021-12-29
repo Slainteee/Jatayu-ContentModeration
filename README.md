@@ -41,6 +41,9 @@ For the image data, we are checking for any inappropriate text in the image or w
 8. Google Colab for GPU support.
 9. Project Management: We used Notion and We find ourself using Notion for more than just project management and tracking. We were able to keep track of what Our Team Members do on a daily basis, make sure that we allocate time efficiently, and track what everyone on the team is up to.
 
+## Demo
+[![Alt text](https://img.youtube.com/vi/6hSvYKUJkGs/0.jpg)](https://www.youtube.com/watch?v=6hSvYKUJkGs)
+
 ## Installation Guide
 * For Windows
 
