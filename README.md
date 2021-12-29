@@ -121,6 +121,15 @@ Wanna know a secret, You can add more tests 😊😊. So go ahead and create a p
 “No one and nothing is perfect, or we wouldn't have uniqueness.” <-- Random quote from google. You can find more [here](https://parade.com/937586/parade/life-quotes/) -->. 
 “No matter how good you get you can always get better, and that's the exciting part.” <- Another one 😅😅->. To Contribute to the project and make it better, follow the [contributing guidelines](https://github.com/Slainteee/Jatayu-ContentModeration/blob/master/CONTRIBUTING.md) for project specific details.
 
+## Maintainer 🚀
+
+<table>
+  <tr>
+    <td align="center"><a href="http://www.linkedin.com/in/khushhalreddy"><img src="https://avatars.githubusercontent.com/u/58569950?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Khushhal Reddy</b></sub></a>
+  </tr>
+</table>
+
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people:
